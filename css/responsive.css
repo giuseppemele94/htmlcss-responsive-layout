@@ -2,6 +2,7 @@
 
 /*Tablet*/
 
+
 @media screen and (min-width:768px) {
 
     /* Il logo nell'header si allinea a sinistra*/
@@ -105,6 +106,20 @@
 
     .quick-notes {
         margin-top: 30px;
+    }
+
+    /* Compaiono i nomi delle piattaforme social */
+
+    .btn .label {
+        display: block;
+    }
+
+    /* Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
     }
 
 }
