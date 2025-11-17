@@ -109,7 +109,6 @@
     }
 
     /* Compaiono i nomi delle piattaforme social */
-
     .btn .label {
         display: block;
     }
@@ -122,4 +121,29 @@
         text-align: left;
     }
 
+
+    /* BONUS Modalità large Mobile*/
+
+
+}
+
+@media screen and (min-width: 576px) {
+
+    /* L'immagine nella descrizione viene affiancata dal testo */
+    .clearfix img {
+        float: left;
+        margin : 10px; 
+        
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /* I bottoni social si allargano */
+    .social-networks .btn {
+        padding: 10px 40px;
+    }
 }
