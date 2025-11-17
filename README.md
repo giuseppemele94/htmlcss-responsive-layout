@@ -1,0 +1,1 @@
+![Screenshot](./img/screens/giallo_booleano_desktop.png)
