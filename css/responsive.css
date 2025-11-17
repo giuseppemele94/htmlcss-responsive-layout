@@ -23,4 +23,31 @@
     .recipe-name {
         font-size: 38px;
     }
+
+    /* Le informazioni della ricetta sotto il video si dispongono a griglia */
+    .quick-notes ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .quick-notes ul li {
+        width: calc(100% / 3);
+        align-items: flex-start;
+    }
+
+    /* I bottoni social si allargano */
+    .social-networks .btn {
+        padding : 10px 55px ; 
+    }
+
+    /*compare il banner pubblicitario */ 
+    .ads {
+        display: block;
+    }
+
+    /* l'immagine nella descrizione della ricetta viene circondata dal testo*/
+    .clearfix img {
+        float : left ; 
+        margin: 10px;
+    }
 }
