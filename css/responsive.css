@@ -21,7 +21,7 @@
 
     /* La grandezza del titolo diventa più grande*/
     .recipe-name {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     /* Le informazioni della ricetta sotto il video si dispongono a griglia */
@@ -37,23 +37,74 @@
 
     /* I bottoni social si allargano */
     .social-networks .btn {
-        padding : 10px 55px ; 
+        padding: 10px 55px;
     }
 
-    /*compare il banner pubblicitario */ 
+    /*compare il banner pubblicitario */
     .ads {
         display: block;
     }
 
     /* l'immagine nella descrizione della ricetta viene circondata dal testo*/
     .clearfix img {
-        float : left ; 
+        float: left;
         margin: 10px;
     }
 
     .clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
+        content: "";
+        display: block;
+        clear: both;
+    }
 }
+
+
+/* Desktop */
+
+@media screen and (min-width : 992px) {
+
+    /* La grandezza el titolo della ricetta aumenta ancora di più */
+    .recipe-name {
+        font-size: 38px;
+    }
+
+    /* Le informazioni della ricetta tornano a disporsi una sotto l'altra*/
+    .quick-notes ul {
+        display: block;
+    }
+
+    /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro*/
+    .recipe-card {
+        display: flex;
+    }
+
+    .recipe-video {
+        flex-basis: 70%;
+        height: 100%;
+
+    }
+
+    .recipe-video iframe {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16 / 9;
+        /* proporzione corretta */
+    }
+
+    .recipe-info {
+        flex-basis: 30%;
+        margin: 0;
+    }
+
+    .quick-notes ul li {
+        width: 100%;
+        display: flex;
+        /* per tenere icona + testo affiancati */
+        align-items: flex-start;
+    }
+
+    .quick-notes {
+        margin-top: 30px;
+    }
+
 }
